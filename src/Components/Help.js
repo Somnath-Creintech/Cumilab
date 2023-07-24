@@ -372,13 +372,14 @@ const Help = () => {
                                 {/*begin::Details*/}
                                 <div className="d-flex flex-column">
                                   {/*begin::Status*/}
-                                  <div className="d-flex align-items-center mb-1">
-                                    <a href=" " className="text-gray-800 text-hover-primary fs-2 fw-bold me-3">Random Questions</a>
-                                   
-                                  </div>
+                                  <h2 className="card-title align-items-start flex-column">
+                                    <span className="card-label fw-bold fs-1 mb-1">Random Questions</span>
+                                  </h2>
+                                 
                                   {/*end::Status*/}
                                   {/*begin::Description*/}
-                                  <div className="d-flex flex-wrap fw-semibold mb-4 fs-5 text-gray-400">Get answers to frequently asked questions and find assistance for common issues on the Help Page.</div>
+                                  <span className="d-flex flex-wrap fw-semibold mb-4 fs-5 text-gray-400">Get answers to frequently asked questions and find assistance for common issues on the Help Page.</span>
+                                 
                                   {/*end::Description*/}
                                 </div>
                                 {/*end::Details*/}
