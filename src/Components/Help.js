@@ -335,7 +335,7 @@ const Help = () => {
                         {/*end::Item*/}
                         
                         {/*begin::Item*/}
-                        
+                        <div className="d-flex flex-stack flex-wrap flex-lg-nowrap gap-2 gap-lg-4 pt-13 pb-6"></div>
                         {/*end::Item*/}
                       </ul>
                       {/*end::Breadcrumb*/}

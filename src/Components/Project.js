@@ -159,9 +159,9 @@ const Project = () => {
                       className="menu-item here show menu-here-bg menu-lg-down-accordion me-0 me-lg-2"
                     >
                       <span className="menu-link">
-                        <a href="project.html">
+                        <Link to="/projects">
                           <span className="menu-title">Projects</span>
-                        </a>
+                        </Link>
                         <span className="menu-arrow d-lg-none" />
                       </span>
                     </div>
@@ -490,11 +490,11 @@ const Project = () => {
                         Project 1
                       </li>
                     </ul>
+                    <div className="d-flex flex-stack flex-wrap flex-lg-nowrap gap-2 gap-lg-4 pt-13 pb-6"></div>
                   </div>
                 </div>
               </div>
             </div>
-
             <div className="app-container container-xxl">
               <div
                 className="app-main flex-column flex-row-fluid"

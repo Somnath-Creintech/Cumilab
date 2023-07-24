@@ -195,6 +195,7 @@ const Projects = () => {
                       </li>
                       <li className="breadcrumb-item text-white fw-bold lh-1">Projects</li>
                     </ul>
+                    <div className="d-flex flex-stack flex-wrap flex-lg-nowrap gap-2 gap-lg-4 pt-13 pb-6"></div>
                   </div>
                   {/* <div className="d-flex flex-stack flex-wrap flex-lg-nowrap gap-4 gap-lg-10 pt-13 pb-6"> */}
                     {/* <div className="page-title me-5">
