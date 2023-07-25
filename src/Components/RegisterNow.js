@@ -9,7 +9,7 @@ export const RegisterNow = () => {
   const [showPassword, setShowPassword] = useState(false);
   
   const validationSchema = Yup.object().shape({
-    name: Yup.string().required('Name is required'),
+    
     email: Yup.string().email('Invalid email address').required('Email is required'),
     mobile: Yup.string().required('Mobile number is required'),
     password: Yup.string()
@@ -29,6 +29,7 @@ export const RegisterNow = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({
     resolver: yupResolver(validationSchema),
   });
@@ -45,9 +46,11 @@ export const RegisterNow = () => {
       customClass: {
         confirmButton: 'btn btn-primary',
       },
+    }).then(() => {
+      reset(); // Call the reset function inside the .then block
+      window.location.href = '/';
     });
   };
-
   const handleTogglePasswordVisibility = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
   };
