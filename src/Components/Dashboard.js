@@ -82,7 +82,7 @@ const Dashboard = () => {
                       </div>
                       <div className="row g-0">
                         <div className="col-6">
-                          <a href="../../demo34/dist/apps/projects/budget.html" className="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                          <a href="../../demo34/dist/apps/projects/budget.html" className="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom" data-bs-toggle="modal" data-bs-target="#kt_modal_new_target">
                             <span className="svg-icon svg-icon-3x svg-icon-primary mb-2">
                               <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.3" d="M15.8 11.4H6C5.4 11.4 5 11 5 10.4C5 9.80002 5.4 9.40002 6 9.40002H15.8C16.4 9.40002 16.8 9.80002 16.8 10.4C16.8 11 16.3 11.4 15.8 11.4ZM15.7 13.7999C15.7 13.1999 15.3 12.7999 14.7 12.7999H6C5.4 12.7999 5 13.1999 5 13.7999C5 14.3999 5.4 14.7999 6 14.7999H14.8C15.3 14.7999 15.7 14.2999 15.7 13.7999Z" fill="currentColor" />
@@ -118,16 +118,17 @@ const Dashboard = () => {
                           </a>
                         </div>
                         <div className="col-6">
-                          <a href="../../demo34/dist/apps/projects/users.html" className="d-flex flex-column flex-center h-100 p-6 bg-hover-light">
+                          <Link to="/help" className="d-flex flex-column flex-center h-100 p-6 bg-hover-light">
                             <span className="svg-icon svg-icon-3x svg-icon-primary mb-2">
                               <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.3" d="M20 15H4C2.9 15 2 14.1 2 13V7C2 6.4 2.4 6 3 6H21C21.6 6 22 6.4 22 7V13C22 14.1 21.1 15 20 15ZM13 12H11C10.5 12 10 12.4 10 13V16C10 16.5 10.4 17 11 17H13C13.6 17 14 16.6 14 16V13C14 12.4 13.6 12 13 12Z" fill="currentColor" />
                                 <path d="M14 6V5H10V6H8V5C8 3.9 8.9 3 10 3H14C15.1 3 16 3.9 16 5V6H14ZM20 15H14V16C14 16.6 13.5 17 13 17H11C10.5 17 10 16.6 10 16V15H4C3.6 15 3.3 14.9 3 14.7V18C3 19.1 3.9 20 5 20H19C20.1 20 21 19.1 21 18V14.7C20.7 14.9 20.4 15 20 15Z" fill="currentColor" />
                               </svg>
                             </span>
+                            
                             <span className="fs-5 fw-semibold text-gray-800 mb-0">Help</span>
                             <span className="fs-7 text-gray-400">Help &amp; Support</span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="py-2 text-center border-top">

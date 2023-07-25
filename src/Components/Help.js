@@ -159,7 +159,7 @@ const Help = () => {
                         <div className="row g-0">
                           {/*begin:Item*/}
                           <div className="col-6">
-                            <a href=" " className="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom">
+                            <a href=" " className="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom" data-bs-toggle="modal" data-bs-target="#kt_modal_new_target">
                               {/*begin::Svg Icon | path: icons/duotune/finance/fin009.svg*/}
                               <span className="svg-icon svg-icon-3x svg-icon-primary mb-2">
                                 <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,7 +207,7 @@ const Help = () => {
                           {/*end:Item*/}
                           {/*begin:Item*/}
                           <div className="col-6">
-                            <a href=" " className="d-flex flex-column flex-center h-100 p-6 bg-hover-light">
+                            <Link to="/help" className="d-flex flex-column flex-center h-100 p-6 bg-hover-light">
                               {/*begin::Svg Icon | path: icons/duotune/finance/fin006.svg*/}
                               <span className="svg-icon svg-icon-3x svg-icon-primary mb-2">
                                 <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +218,7 @@ const Help = () => {
                               {/*end::Svg Icon*/}
                               <span className="fs-5 fw-semibold text-gray-800 mb-0">Help</span>
                               <span className="fs-7 text-gray-400">Help &amp; Support</span>
-                            </a>
+                            </Link>
                           </div>
                           {/*end:Item*/}
                         </div>

@@ -207,7 +207,7 @@ const Project = () => {
                         <div className="col-6">
                           <a
                             href=" "
-                            className="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom"
+                            className="d-flex flex-column flex-center h-100 p-6 bg-hover-light border-end border-bottom" 
                           >
                             <span className="svg-icon svg-icon-3x svg-icon-primary mb-2">
                               <svg
@@ -302,8 +302,7 @@ const Project = () => {
                           </a>
                         </div>
                         <div className="col-6">
-                          <a
-                            href=" "
+                          <Link to="/help" 
                             className="d-flex flex-column flex-center h-100 p-6 bg-hover-light"
                           >
                             <span className="svg-icon svg-icon-3x svg-icon-primary mb-2">
@@ -331,7 +330,7 @@ const Project = () => {
                             <span className="fs-7 text-gray-400">
                               Help &amp; Support
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="py-2 text-center border-top">
