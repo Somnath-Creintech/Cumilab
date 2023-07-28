@@ -37,7 +37,7 @@ const TwoStepVerification = () => {
 
   return (
     <div id="kt_body" className="app-blank">
-    <div className="d-flex flex-column flex-root" id="kt_app_root">
+    <div className="d-flex flex-column flex-root vh-100" id="kt_app_root">
       <div className="d-flex flex-column flex-lg-row flex-column-fluid">
         <div className="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1">
           <div className="d-flex flex-center flex-column flex-lg-row-fluid">

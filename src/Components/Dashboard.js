@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+// import Header from './Header';
 
 const Dashboard = () => {
 
@@ -29,7 +30,8 @@ const Dashboard = () => {
       <div id="kt_app_body" data-kt-app-header-fixed-mobile="true" data-kt-app-toolbar-enabled="true" className="app-default">
       <div className="d-flex flex-column flex-root app-root" id="kt_app_root">
         <div className="app-page flex-column flex-column-fluid" id="kt_app_page">
-          <div id="kt_app_header" className="app-header" data-kt-sticky="true" data-kt-sticky-activate="{default: false, lg: true}" data-kt-sticky-name="app-header-sticky" data-kt-sticky-offset="{default: false, lg: '300px'}">
+          {/* <Header/> */}
+           <div id="kt_app_header" className="app-header" data-kt-sticky="true" data-kt-sticky-activate="{default: false, lg: true}" data-kt-sticky-name="app-header-sticky" data-kt-sticky-offset="{default: false, lg: '300px'}">
             <div className="app-container container-xxl d-flex align-items-stretch justify-content-between" id="kt_app_header_container">
               <div className="d-flex align-items-center d-lg-none ms-n2 me-2" title="Show sidebar menu">
                 <div className="btn btn-icon btn-active-color-primary w-35px h-35px" id="kt_app_header_menu_toggle">

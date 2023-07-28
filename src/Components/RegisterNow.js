@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 export const RegisterNow = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -39,17 +39,17 @@ export const RegisterNow = () => {
     // Perform your form submission logic here
     // You can replace this console.log with your actual logic, such as making an API request
     // If the submission is successful, you can show a success message using Swal.fire()
-    Swal.fire({
-      text: 'You have successfully registered!',
-      icon: 'success',
-      confirmButtonText: 'Ok, got it!',
-      customClass: {
-        confirmButton: 'btn btn-primary',
-      },
-    }).then(() => {
+    // Swal.fire({
+    //   text: 'You have successfully registered!',
+    //   icon: 'success',
+    //   confirmButtonText: 'Ok, got it!',
+    //   customClass: {
+    //     confirmButton: 'btn btn-primary',
+    //   },
+    // }).then(() => {
       reset(); // Call the reset function inside the .then block
       window.location.href = '/';
-    });
+    // });
   };
   const handleTogglePasswordVisibility = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
@@ -108,7 +108,7 @@ export const RegisterNow = () => {
                       className="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
                       onClick={handleTogglePasswordVisibility}
                     >
-                      <i className={`bi ${showPassword ? 'bi-eye-slash' : 'bi-eye'} fs-2`} />
+                      <i className={`bi ${showPassword ? 'bi-eye' : 'bi-eye-slash'} fs-2`} />
                     </span>
                   </div>
                   {errors.password && <div className="invalid-feedback">{errors.password.message}</div>}

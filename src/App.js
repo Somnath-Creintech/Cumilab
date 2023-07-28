@@ -9,6 +9,7 @@ import TermsAndConditions from "./Components/TermsAndConditions";
 import Project from "./Components/Project";
 import Help from "./Components/Help";
 import Projects from "./Components/Projects";
+// import Header from "./Components/Header";
 function App() {
 
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
   
   return (
     <div>
+      {/* <Header/> */}
       <BrowserRouter>
       <Routes>
         <Route path="/sign-up" element={<RegisterNow />}/>
