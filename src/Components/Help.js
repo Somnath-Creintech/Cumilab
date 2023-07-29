@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useCallback, useMemo} from 'react';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const Help = () => {
   const helpQuestions = useMemo(() => [
@@ -405,7 +406,7 @@ const Help = () => {
               className="accordion py-3"
               onClick={() => toggleQuestion(index)}
               style={{
-                backgroundColor: expandedIndex === index ? '#2e6abd' : '#181C32',
+                backgroundColor: expandedIndex === index ? '#17191E' : '#696969',
                 color: '#efefef',
                 cursor: 'pointer',
                 padding: '12px',
@@ -449,30 +450,13 @@ const Help = () => {
                     {/*end::Content*/}
                   </div>
                   {/*end::Content wrapper*/}
-                  {/*begin::Footer*/}
-                  <div id="kt_app_footer" className="app-footer d-flex flex-column flex-md-row align-items-center flex-center flex-md-stack py-2 py-lg-4">
-                    {/*begin::Copyright*/}
-                    <div className="text-dark order-2 order-md-1">
-                      <span className="text-muted fw-semibold me-1">© 2023 CuMiLab | All Rights Reserved.</span>
-                    </div>
-                    {/*end::Copyright*/}
-                    {/*begin::Menu*/}
-                    <ul className="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-                      <li className="menu-item">
-                        <a href=" " target="_blank" className="menu-link px-2">Privacy Policy</a>
-                      </li>
-                      <li className="menu-item">
-                        <a href=" " target="_blank" className="menu-link px-2">Terms of Service</a>
-                      </li>
-                    </ul>
-                    {/*end::Menu*/}
-                  </div>
-                  {/*end::Footer*/}
+                  
                 </div>
                 {/*end:::Main*/}
               </div>
               {/*end::Wrapper container*/}
             </div>
+            <Footer/>
             {/*end::Wrapper*/}
           </div>
           {/*end::Page*/}

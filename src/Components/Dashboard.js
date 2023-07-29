@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 // import Header from './Header';
 
 const Dashboard = () => {
@@ -58,7 +59,7 @@ const Dashboard = () => {
                         <span className="menu-arrow d-lg-none" />
                       </span>
                     </div>
-                    <div data-kt-menu-placement="bottom-start" data-kt-menu-offset="-200,0" className="menu-item menu-lg-down-accordion me-0 me-lg-2">
+                    <div data-kt-menu-placement="bottom-start" data-kt-menu-offset="-200,0" className="menu-item menu-lg-down-accordion me-0 me-lg-2 ">
                       <span className="menu-link">
                         <Link to="/projects"><span className="menu-title">Projects</span></Link>
                         <span className="menu-arrow d-lg-none" />
@@ -178,7 +179,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
-            <div id="kt_app_toolbar" className="app-toolbar py-6">
+            <div id="kt_app_toolbar" className="app-toolbar py-13">
               <div id="kt_app_toolbar_container" className="app-container container-xxl d-flex align-items-start">
                 <div className="d-flex flex-column flex-row-fluid">
                   <div className="d-flex align-items-center pt-1">
@@ -260,142 +261,13 @@ const Dashboard = () => {
                             </div>
                           </div>
                         </div>
-
-                        {/* =========part moved to project session======= */}
-
-                        {/* <div className="card mb-5 mb-xl-8">
-                          <div className="card-header border-0 pt-5">
-                            <h2 className="card-title align-items-start flex-column">
-                              <span className="card-label fw-bold fs-1 mb-1">All Projects</span>
-                              <span className="text-muted mt-1 fw-semibold fs-7">List of all the projects with all it's details</span>
-                            </h2>
-                          </div>
-                          <div className="card-body py-3">
-                            <div className="tab-content">
-                              <div className="tab-pane fade show active" id="kt_table_widget_5_tab_1">
-                                <div className="table-responsive">
-                                  <table className="table table-row-dashed table-row-gray-200 align-middle gs-0 gy-4">
-                                    <thead>
-                                      <tr className="border-0">
-                                        <th className="p-0 w-50px" />
-                                        <th className="p-0 min-w-150px" />
-                                        <th className="p-0 min-w-140px" />
-                                        <th className="p-0 min-w-110px" />
-                                        <th className="p-0 min-w-50px" />
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>
-                                          <div className="symbol symbol-45px me-2">
-                                            <span className="symbol-label">
-                                              <img className="mw-50px mw-lg-45px" src="assets/media/misc/project-1-logo.png" alt="logo" />
-                                            </span>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <a href="project.html" className="text-dark fw-bold text-hover-primary mb-1 fs-4">Project 1</a>
-                                          <span className="text-muted fw-semibold d-block">Commercial Project</span>
-                                        </td>
-                                        <td className="text-end text-muted fw-bold">Project short description</td>
-                                        <td className="text-end">
-                                          <span className="badge badge-light-success">Approved</span>
-                                        </td>
-                                        <td className="text-end">
-                                          <a href="project.html" className="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                            <span className="svg-icon svg-icon-2">
-                                              <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect opacity="0.5" x={18} y={13} width={13} height={2} rx={1} transform="rotate(-180 18 13)" fill="currentColor" />
-                                                <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                              </svg>
-                                            </span>
-                                          </a>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <div className="symbol symbol-45px me-2">
-                                            <span className="symbol-label">
-                                              <img className="mw-50px mw-lg-45px" src="assets/media/misc/project-1-logo.png" alt="logo" />
-                                            </span>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <a href="project.html" className="text-dark fw-bold text-hover-primary mb-1 fs-4">Project 2</a>
-                                          <span className="text-muted fw-semibold d-block">Resedential Project</span>
-                                        </td>
-                                        <td className="text-end text-muted fw-bold">Project short description</td>
-                                        <td className="text-end">
-                                          <span className="badge badge-light-warning">Under Review</span>
-                                        </td>
-                                        <td className="text-end">
-                                          <a href="project.html" className="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                            <span className="svg-icon svg-icon-2">
-                                              <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect opacity="0.5" x={18} y={13} width={13} height={2} rx={1} transform="rotate(-180 18 13)" fill="currentColor" />
-                                                <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                              </svg>
-                                            </span>
-                                          </a>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <div className="symbol symbol-45px me-2">
-                                            <span className="symbol-label">
-                                              <img className="mw-50px mw-lg-45px" src="assets/media/misc/project-1-logo.png" alt="logo" />
-                                            </span>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <a href="project.html" className="text-dark fw-bold text-hover-primary mb-1 fs-4">Project 3</a>
-                                          <span className="text-muted fw-semibold d-block">Donation Project</span>
-                                        </td>
-                                        <td className="text-end text-muted fw-bold">Project short description</td>
-                                        <td className="text-end">
-                                          <span className="badge badge-light-danger">Rejected</span>
-                                        </td>
-                                        <td className="text-end">
-                                          <a href=" " className="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                            <span className="svg-icon svg-icon-2">
-                                              <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect opacity="0.5" x={18} y={13} width={13} height={2} rx={1} transform="rotate(-180 18 13)" fill="currentColor" />
-                                                <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="currentColor" />
-                                              </svg>
-                                            </span>
-                                          </a>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div> */}
-
-
-
                       </div>
                     </div>
                   </div>
-                </div>
-                <div id="kt_app_footer" className="app-footer d-flex flex-column flex-md-row align-items-center flex-center flex-md-stack py-2 py-lg-4">
-                  <div className="text-dark order-2 order-md-1">
-                    <span className="text-muted fw-semibold me-1">© 2023</span>
-                    <a href=" " target="_blank" className="text-gray-800 text-hover-primary">CuMiLab </a> | All Rights Reserved.
-                  </div>
-                  <ul className="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-                    <li className="menu-item">
-                      <a href=" " target="_blank" className="menu-link px-2">Privacy Policy</a>
-                    </li>
-                    <li className="menu-item">
-                      <a href=" " target="_blank" className="menu-link px-2">Terms of Service</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                </div> 
+              </div> 
             </div>
+            <Footer/>
           </div>
         </div>
       </div>
