@@ -3,13 +3,9 @@ import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
-import useReq from '../hook/useReq'
-
-
 // import Swal from 'sweetalert2';
 
 const SignIn = () => {
-  const{error,loading,requestData,response,clear} = useReq();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -27,9 +23,10 @@ const SignIn = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const handleSignIn = (e) => {
-    e.preventDefault();
-    requestData("POST","/auth/login",{email,password});
+  const handleSignIn = (data) => {
+    console.log('Sign In submitted:', data);
+        reset();
+        window.location.href = '/otp-verification';
       };
   return (
     <div id="kt_body" className="app-blank">
@@ -43,7 +40,7 @@ const SignIn = () => {
                   noValidate="novalidate"
                   id="kt_sign_in_form"
                   data-kt-redirect-url="/otp-verification"
-                  onSubmit={handleSignIn}
+                  onSubmit={handleSubmit(handleSignIn)}
                 >
                   <div className="text-center mb-11">
                     <h1 className="text-dark fw-bolder mb-3">Sign In</h1>
