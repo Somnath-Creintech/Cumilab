@@ -199,40 +199,10 @@ const Dashboard = () => {
                       <li className="breadcrumb-item text-white fw-bold lh-1">Dashboard</li>
                     </ul>
                   </div>
-                  <div className="d-flex flex-stack flex-wrap flex-lg-nowrap gap-4 gap-lg-10 pt-13 pb-6">
+                  <div className="d-flex flex-stack flex-wrap flex-lg-nowrap gap-4 gap-lg-10 pt-16 pb-6">
                     <div className="page-title me-5">
                       <h1 className="page-heading d-flex text-white fw-bold fs-1 flex-column justify-content-center my-0">Welcome, Name</h1>
-                    </div>
-                    <div className="d-flex align-self-center flex-center flex-shrink-0">
-                      <a href=" " className="btn btn-sm border btn-active-color-white btn-custom px-4" data-bs-toggle="modal" data-bs-target="#kt_modal_new_target">
-                        <span className="svg-icon svg-icon-3">
-                          <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect opacity="0.3" x={2} y={2} width={20} height={20} rx={5} fill="currentColor" />
-                            <rect x="10.8891" y="17.8033" width={12} height={2} rx={1} transform="rotate(-90 10.8891 17.8033)" fill="currentColor" />
-                            <rect x="6.01041" y="10.9247" width={12} height={2} rx={1} fill="currentColor" />
-                          </svg>
-                        </span>
-                        <span className="ms-n1">Create Project</span>
-                      </a>
-                      <a href=" " className="btn btn-sm btn-active-color-white border btn-custom ms-3 px-4" data-bs-toggle="modal" data-bs-target="#">
-                        <span className="svg-icon svg-icon-3">
-                          <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect opacity="0.3" x={2} y={2} width={20} height={20} rx={5} fill="currentColor" />
-                            <rect x="10.8891" y="17.8033" width={12} height={2} rx={1} transform="rotate(-90 10.8891 17.8033)" fill="currentColor" />
-                            <rect x="6.01041" y="10.9247" width={12} height={2} rx={1} fill="currentColor" />
-                          </svg>
-                        </span>
-                        Upload Documents</a>
-                      <a href="dm.html" className="btn btn-sm btn-active-color-white border btn-custom ms-3 px-4">
-                        <span className="svg-icon svg-icon-3">
-                          <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect opacity="0.3" x={2} y={2} width={20} height={20} rx={5} fill="currentColor" />
-                            <rect x="10.8891" y="17.8033" width={12} height={2} rx={1} transform="rotate(-90 10.8891 17.8033)" fill="currentColor" />
-                            <rect x="6.01041" y="10.9247" width={12} height={2} rx={1} fill="currentColor" />
-                          </svg>
-                        </span>
-                        DM Members</a>
-                    </div>
+                    </div> 
                   </div>
                 </div>
               </div>

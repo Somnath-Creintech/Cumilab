@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+// import FilesGallery from "./FilesGallery";
 const Project = () => {
   useEffect(() => {
     const script1 = document.createElement('script');
@@ -534,53 +535,6 @@ const Project = () => {
                                   along with some quick details.
                                 </div>
                               </div>
-                              {/* <div className="d-flex mb-4">
-                                <a
-                                  href=" "
-                                  className="btn btn-sm btn-secondary me-3"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#kt_modal_users_search"
-                                >
-                                  <i className="fas fa-user" />
-                                  View Members
-                                </a>
-                                <a
-                                  href="chat.html"
-                                  className="btn btn-sm btn-primary me-3"
-                                >
-                                  <i className="fas fa-message" />
-                                  Communication
-                                </a>
-                                <div className="me-0">
-                                  <button
-                                    className="btn btn-sm btn-icon btn-bg-light btn-active-color-primary"
-                                    data-kt-menu-trigger="click"
-                                    data-kt-menu-placement="bottom-end"
-                                  >
-                                    <i className="bi bi-three-dots fs-3" />
-                                  </button>
-                                  <div
-                                    className="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-3"
-                                    data-kt-menu="true"
-                                  >
-                                    <div className="menu-item px-3">
-                                      <div className="menu-content text-muted pb-2 px-3 fs-7 text-uppercase">
-                                        Quick Links
-                                      </div>
-                                    </div>
-                                    <div className="menu-item px-3">
-                                      <a href=" " className="menu-link px-3">
-                                        Add New Section
-                                      </a>
-                                    </div>
-                                    <div className="menu-item px-3 my-1">
-                                      <a href=" " className="menu-link px-3">
-                                        Settings
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> */}
                             </div>
                             <div className="d-flex flex-wrap justify-content-start">
                               <div className="d-flex flex-wrap">
@@ -615,20 +569,20 @@ const Project = () => {
                         <div className="separator" />
                         <ul className="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bold">
                           <li className="nav-item">
-                            <a
+                            <Link to="/"
                               className="nav-link text-active-primary py-5 me-6 active"
                               href=" "
                             >
                               Documents
-                            </a>
+                            </Link>
                           </li>
                           <li className="nav-item">
-                            <a
+                            <Link to="/"
                               className="nav-link text-active-primary py-5 me-6"
                               href=" "
                             >
                               Communication
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -636,12 +590,7 @@ const Project = () => {
                     <div className="card" style={{ marginTop: "30px" }}>
 
                       <div className="card-header card-header-stretch">
-                        <iframe
-                          src="gallery.php"
-                          height={1200}
-                          width="100%"
-                          title="Gallery"
-                        />
+                        {/* <FilesGallery/> */}
                       </div>
                     </div>
                   </div>
